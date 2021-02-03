@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
   gem.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = [">= 2.1", "< 2.6"]
+  gem.required_ruby_version = [">= 2.1", "< 3.0"]
 
-  gem.add_runtime_dependency "paperclip", ">= 3.4", "< 6.0"
+  gem.add_runtime_dependency "kt-paperclip", ">= 6.3"
 
   gem.add_development_dependency "rake", ">= 10.0", "< 13"
   gem.add_development_dependency "rspec", ">= 3.0", "< 4"
